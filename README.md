@@ -1,4 +1,4 @@
-# ��� Econverse - E-commerce Front-End
+# 🛒 Econverse - E-commerce Front-End
 
 ![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript)
@@ -7,33 +7,33 @@
 
 Projeto desenvolvido como teste técnico para a vaga de Desenvolvedor Front-End na **Econverse**. Uma aplicação moderna de e-commerce com foco em tecnologia, desenvolvida com React, TypeScript e Sass.
 
-## ��� Índice
+## 📑 Índice
 
-- [��� Econverse - E-commerce Front-End](#-econverse---e-commerce-front-end)
-  - [��� Índice](#-índice)
-  - [��� Sobre o Projeto](#-sobre-o-projeto)
+- [🛒 Econverse - E-commerce Front-End](#-econverse---e-commerce-front-end)
+  - [📑 Índice](#-índice)
+  - [📋 Sobre o Projeto](#-sobre-o-projeto)
   - [✨ Funcionalidades](#-funcionalidades)
-  - [��� Tecnologias](#-tecnologias)
-  - [��� Pré-requisitos](#-pré-requisitos)
-  - [��� Instalação](#-instalação)
+  - [🚀 Tecnologias](#-tecnologias)
+  - [📦 Pré-requisitos](#-pré-requisitos)
+  - [💻 Instalação](#-instalação)
   - [▶️ Como Executar](#️-como-executar)
     - [Modo de Desenvolvimento](#modo-de-desenvolvimento)
     - [Build de Produção](#build-de-produção)
     - [Preview da Build](#preview-da-build)
-  - [��� Scripts Disponíveis](#-scripts-disponíveis)
-  - [��� Estrutura do Projeto](#-estrutura-do-projeto)
-  - [��� Boas Práticas Implementadas](#-boas-práticas-implementadas)
-    - [��� Arquitetura](#-arquitetura)
-    - [��� Performance](#-performance)
+  - [📜 Scripts Disponíveis](#-scripts-disponíveis)
+  - [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+  - [🎯 Boas Práticas Implementadas](#-boas-práticas-implementadas)
+    - [🏗️ Arquitetura](#️-arquitetura)
+    - [⚡ Performance](#-performance)
     - [♿ Acessibilidade](#-acessibilidade)
-    - [��� SEO](#-seo)
-    - [��� Estilização](#-estilização)
-  - [��� Design e Layout](#-design-e-layout)
+    - [🔍 SEO](#-seo)
+    - [🎨 Estilização](#-estilização)
+  - [🎨 Design e Layout](#-design-e-layout)
     - [Principais Componentes:](#principais-componentes)
-  - [���‍��� Autor](#-autor)
-  - [��� Licença](#-licença)
+  - [👨‍💻 Autor](#-autor)
+  - [📄 Licença](#-licença)
 
-## ��� Sobre o Projeto
+## 📋 Sobre o Projeto
 
 Este projeto é uma aplicação de e-commerce responsiva que apresenta uma vitrine de produtos consumindo dados de um arquivo JSON local. A aplicação foi desenvolvida seguindo as melhores práticas de desenvolvimento front-end e **pixel-perfect matching** com o design do Figma, com foco em:
 
@@ -49,18 +49,18 @@ Este projeto é uma aplicação de e-commerce responsiva que apresenta uma vitri
 
 ## ✨ Funcionalidades
 
-- ��� **Página Principal** com banner hero atrativo e pixel-perfect
-- ���️ **Categorias de Produtos** com navegação intuitiva e ícones customizados
-- ���️ **Vitrine de Produtos** consumindo todos os dados do db.json (productName, descriptionShort, photo, price)
-- ��� **Modal de Detalhes** horizontal ao clicar em um produto
-- ��� **Design Responsivo** para todos os dispositivos
+- 🏠 **Página Principal** com banner hero atrativo e pixel-perfect
+- 🏷️ **Categorias de Produtos** com navegação intuitiva e ícones customizados
+- 🛍️ **Vitrine de Produtos** consumindo todos os dados do db.json (productName, descriptionShort, photo, price)
+- 🔍 **Modal de Detalhes** horizontal ao clicar em um produto
+- 📱 **Design Responsivo** para todos os dispositivos
 - ⚡ **Carregamento Rápido** com Vite e lazy loading de imagens
-- ��� **Estilização Profissional** com Sass (BEM methodology)
+- 💎 **Estilização Profissional** com Sass (BEM methodology)
 - ♿ **Acessibilidade** (ARIA labels, foco do teclado, navegação semântica)
-- ��� **Logo Econverse** com círculo amarelo (#FFB800) e tipografia customizada
-- ��� **Ícone de Coroa** no menu de assinatura premium
+- 🎨 **Logo Econverse** com círculo amarelo (#FFB800) e tipografia customizada
+- 👑 **Ícone de Coroa** no menu de assinatura premium
 
-## ��� Tecnologias
+## 🚀 Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -70,7 +70,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - **[Sass](https://sass-lang.com/)** - v1.98.0
 - **[ESLint](https://eslint.org/)** - Linting e qualidade de código
 
-## ��� Pré-requisitos
+## 📦 Pré-requisitos
 
 Antes de começar, certifique-se de ter instalado em sua máquina:
 
@@ -84,7 +84,7 @@ node --version
 npm --version
 ```
 
-## ��� Instalação
+## 💻 Instalação
 
 1. **Clone o repositório**
 
@@ -135,7 +135,7 @@ Para visualizar a build de produção localmente:
 npm run preview
 ```
 
-## ��� Scripts Disponíveis
+## 📜 Scripts Disponíveis
 
 | Script | Descrição |
 |--------|-----------|
@@ -144,7 +144,7 @@ npm run preview
 | `npm run preview` | Visualiza a build de produção localmente |
 | `npm run lint` | Verifica o código com ESLint |
 
-## ��� Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 econverse/
@@ -184,14 +184,14 @@ econverse/
 └── README.md            # Este arquivo
 ```
 
-## ��� Boas Práticas Implementadas
+## 🎯 Boas Práticas Implementadas
 
-### ��� Arquitetura
+### 🏗️ Arquitetura
 - **Componentização**: Componentes reutilizáveis e modulares
 - **Separação de Responsabilidades**: Hooks customizados para lógica de negócio
 - **Type Safety**: TypeScript em todo o projeto
 
-### ��� Performance
+### ⚡ Performance
 - **Lazy Loading**: Carregamento otimizado de imagens
 - **Code Splitting**: Divisão automática de código com Vite
 - **Memoização**: Otimização de renderizações
@@ -202,19 +202,19 @@ econverse/
 - **HTML Semântico**: Tags semânticas (header, nav, main, section, footer)
 - **Contraste de Cores**: Seguindo diretrizes WCAG
 
-### ��� SEO
+### 🔍 SEO
 - **Meta Tags**: Descrições, keywords e Open Graph
 - **Structured Data**: Dados estruturados para mecanismos de busca
 - **Canonical URLs**: URLs canônicas para evitar conteúdo duplicado
 - **Performance**: Otimizações para Core Web Vitals
 
-### ��� Estilização
+### 🎨 Estilização
 - **Sass/SCSS**: Pré-processador CSS com variáveis e mixins
 - **BEM Methodology**: Nomenclatura consistente de classes
 - **Mobile First**: Design responsivo partindo do mobile
 - **Design System**: Variáveis centralizadas para cores, espaçamentos e tipografia
 
-## ��� Design e Layout
+## 🎨 Design e Layout
 
 O design foi baseado no layout fornecido no Figma, respeitando:
 - ✅ Layout pixel-perfect (Hero: 75px título, 42px subtitle)
@@ -237,7 +237,7 @@ O design foi baseado no layout fornecido no Figma, respeitando:
 - **Categories**: Carrossel de marcas com logos circulares
 - **Footer**: Newsletter e informações institucionais
 
-## ���‍��� Autor
+## 👨‍💻 Autor
 
 Desenvolvido por Marcelo Borges
 
@@ -247,7 +247,7 @@ Desenvolvido por Marcelo Borges
 
 ---
 
-## ��� Licença
+## 📄 Licença
 
 Este projeto foi desenvolvido como parte de um teste técnico para a Econverse.
 
