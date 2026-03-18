@@ -1,0 +1,160 @@
+@use '../../styles/variables' as *;
+
+.categories {
+  padding: 60px 0;
+  background: #F9F9F9;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3442B5;
+    margin: 0 0 40px;
+    text-align: center;
+  }
+
+  &__carousel {
+    position: relative;
+    padding: 0 50px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    
+    // Esconde a scrollbar mas mantém a funcionalidade
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    background: $color-white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: relative;
+  }
+
+  &__logo-ec {
+    background: #FFB800;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: lowercase;
+    position: relative;
+    z-index: 0;
+    margin-right: -8px;
+  }
+
+  &__logo-onverse {
+    color: #3F2C56;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: lowercase;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #DDD;
+    background: $color-white;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 10;
+
+    &:hover {
+      background: #F5F5F5;
+      border-color: #BBB;
+      color: #333;
+    }
+
+    &:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .categories {
+    padding: 40px 0;
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: 32px;
+    }
+
+    &__carousel {
+      padding: 0 20px;
+    }
+
+    &__item {
+      width: 120px;
+      height: 120px;
+    }
+
+    &__logo-ec {
+      width: 38px;
+      height: 38px;
+      font-size: 22px;
+      margin-right: -6px;
+    }
+
+    &__logo-onverse {
+      font-size: 22px;
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+}

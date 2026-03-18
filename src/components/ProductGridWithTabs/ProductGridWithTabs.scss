@@ -1,0 +1,177 @@
+@use '../../styles/variables' as *;
+
+.product-grid-tabs {
+  padding: 60px 0;
+  background: $color-white;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3442B5;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &__tab {
+    flex: 1;
+    padding: 14px 24px;
+    background: $color-white;
+    border: none;
+    border-right: 1px solid #E0E0E0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      background: #F5F5F5;
+      color: #3F51B5;
+    }
+
+    &--active {
+      background: #3F51B5;
+      color: $color-white;
+
+      &:hover {
+        background: #3F51B5;
+        color: $color-white;
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid #3F51B5;
+      outline-offset: -2px;
+      z-index: 1;
+    }
+  }
+
+  &__carousel {
+    position: relative;
+    padding: 0 60px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #E0E0E0;
+    background: $color-white;
+    color: #666;
+    font-size: 32px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background: #3F51B5;
+      border-color: #3F51B5;
+      color: $color-white;
+      box-shadow: 0 4px 12px rgba(63, 81, 181, 0.3);
+    }
+
+    &:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-grid-tabs {
+    &__nav {
+      overflow-x: auto;
+      scrollbar-width: thin;
+      justify-content: flex-start;
+    }
+
+    &__tab {
+      white-space: nowrap;
+      flex: 0 0 auto;
+      min-width: 120px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid-tabs {
+    padding: 40px 0;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__nav {
+      margin-bottom: 24px;
+    }
+
+    &__tab {
+      padding: 12px 16px;
+      font-size: 12px;
+      min-width: 100px;
+    }
+
+    &__carousel {
+      padding: 0 40px;
+    }
+
+    &__arrow {
+      width: 36px;
+      height: 36px;
+      font-size: 24px;
+    }
+
+    &__container {
+      gap: 12px;
+    }
+  }
+}

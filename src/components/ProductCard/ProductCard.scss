@@ -1,0 +1,123 @@
+@use '../../styles/variables' as *;
+
+.product-card {
+  background: $color-white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  &__image-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    background: #F9F9F9;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+  }
+
+  &__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+  }
+
+  &__description {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+    min-height: 36px;
+  }
+
+  &__prices {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__price-old {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__installments {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #F0F0F0;
+    color: #3442B5;
+    font-size: 11px;
+    border-radius: 4px;
+    align-self: flex-start;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 12px 24px;
+    background: #3F51B5;
+    color: $color-white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 8px;
+
+    &:hover {
+      background: #354499;
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    min-width: 180px;
+
+    &__content {
+      padding: 16px;
+    }
+
+    &__price {
+      font-size: 18px;
+    }
+  }
+}

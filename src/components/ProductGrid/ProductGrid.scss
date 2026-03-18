@@ -1,0 +1,120 @@
+@use '../../styles/variables' as *;
+
+.product-grid {
+  padding: 60px 0;
+  background: #F9F9F9;
+
+  &__header {
+    margin-bottom: 32px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3F51B5;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: #3F3F40;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #3F51B5;
+      text-decoration: underline;
+    }
+  }
+
+  &__carousel {
+    position: relative;
+    padding: 0 50px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    
+    // Esconde a scrollbar mas mantém a funcionalidade
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #DDD;
+    background: $color-white;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 10;
+
+    &:hover {
+      background: #F5F5F5;
+      border-color: #BBB;
+      color: #333;
+    }
+
+    &:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: $color-text-light;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    padding: 40px 0;
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__carousel {
+      padding: 0 20px;
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+}

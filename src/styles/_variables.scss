@@ -1,0 +1,38 @@
+// Cores principais
+$color-primary: #F71963;
+$color-secondary: #FF6B00;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+// Cores de texto
+$color-text: #333333;
+$color-text-light: #666666;
+$color-text-lighter: #999999;
+
+// Cores de fundo
+$color-background: #F5F5F5;
+$color-background-dark: #E5E5E5;
+
+// Cores de borda
+$color-border: #E0E0E0;
+$color-border-light: #F0F0F0;
+
+// Container
+$container-max-width: 1200px;
+$container-padding: 20px;
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
