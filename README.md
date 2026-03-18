@@ -89,8 +89,8 @@ npm --version
 1. **Clone o repositório**
 
 ```bash
-git clone https://github.com/Marcelojr29/econverse.git
-cd econverse
+git clone https://github.com/Marcelojr29/teste-front-end.git
+cd teste-front-end
 ```
 
 2. **Instale as dependências**
@@ -241,8 +241,8 @@ O design foi baseado no layout fornecido no Figma, respeitando:
 
 Desenvolvido por Marcelo Borges
 
-- LinkedIn: [seu-linkedin](https://linkedin.com/in/marcelobjr)
-- GitHub: [seu-github](https://github.com/Marcelojr29)
+- LinkedIn: Marcelo Borges](https://linkedin.com/in/marcelobjr)
+- GitHub: [Marcelo Borges](https://github.com/Marcelojr29)
 - Email: marceloborgesjr2000@gmail.com
 
 ---
