@@ -241,7 +241,7 @@ O design foi baseado no layout fornecido no Figma, respeitando:
 
 Desenvolvido por Marcelo Borges
 
-- LinkedIn: Marcelo Borges](https://linkedin.com/in/marcelobjr)
+- LinkedIn: [Marcelo Borges](https://linkedin.com/in/marcelobjr)
 - GitHub: [Marcelo Borges](https://github.com/Marcelojr29)
 - Email: marceloborgesjr2000@gmail.com
 
